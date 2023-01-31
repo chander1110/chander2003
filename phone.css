@@ -1,0 +1,327 @@
+/*css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  /* css variables*/
+  :root {
+    --navbar-height: 19px;
+  }
+  
+  /* navigation   bar*/
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+  }
+  
+  #navbar::before {
+    content: "";
+    background-color: gray;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  #logo {
+    margin: 1px 10px;
+  }
+  
+  #logo img {
+    margin: 3px 3px;
+    height: 30px;
+  }
+  .meal{
+      font-size: 2rem;
+      font-family: "merriweather";
+      background-color: black;
+      color: wheat;
+      border-radius: 25px;
+  }
+  .meal{
+    background-color: aquamarine;
+    transition: 3s;
+    transition-timing-function: ease-out;
+   
+  }
+  .meal:hover{
+      color: black;
+      background-color: white;
+      border-radius: 10px;
+  }
+  #logo{
+    transition: 2s;
+    transition-timing-function: ease-out;
+    transition: all 3s ease-in-out .3s; 
+    animation: logo 2s;
+    animation-iteration-count: infinite; 
+  }
+  @keyframes logo {
+    0%{background: red; }
+    25%{background: green;}
+    50%{background: blue;}
+    100%{background: pink;}
+  }
+  #navbar ul {
+    display: flex;
+    flex-direction:row;
+    font-family: "merriweather";
+    margin-left: 10px;
+  }
+  #navbar ul li {
+    list-style: none;
+    font-size: 0.8em;
+    
+    /*   color: white;
+      background-color: black;*/
+  }
+  #navbar ul li a {
+    display: block;
+    padding: 0px 0px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  #navbar ul li a:hover {
+    color: black;
+    background-color: wheat;
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    justify-content: center;
+    height: 375px;
+    align-items: center;
+  }
+  
+  #home::before {
+    content: "";
+    background: url(bg12.webp) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 430px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  #home:hover{
+      color: black;
+      background: url('bg12.webp') no-repeat center center/cover;
+      background-color: powderblue;
+  }
+  #home h1 {
+    color: white;
+    text-align: center;
+    font-family: "merriweather";
+  }
+  #home p {
+    color:aqua;
+    text-align: center;
+    font-size: 1em;
+    font-family: "merriweather";
+    
+  }
+  #services {
+    margin: 34px;
+    display: flex;
+    flex-direction: column;
+  }
+  #services #box1:hover {
+      color: black;
+      background: url('food2.gif') no-repeat center center/cover;
+      background-color: powderblue;
+    }
+    #services #box2:hover {
+        color: black;
+        background: url('food4.webp') no-repeat center center/cover;
+        background-color: powderblue;
+      }
+      #services #box3:hover {
+          color: black;
+          background: url('food1.gif') no-repeat center center/cover;
+          background-color: powderblue;
+        }
+  #services .box {
+    border: 2px solid brown;
+    padding: 14px;
+    margin: 8px 5px;
+    border-radius: 10px;
+    background: #f2f2fe;
+    margin-bottom: 5px;
+  }
+  
+  #services .box img {
+    height: 50px;
+    margin: auto;
+    display: block;
+  }
+  #services .box p {
+    font-family: "merriweather";
+  }
+  #client-section {
+  
+    position: relative;
+  }
+  #client-section::before {
+    content: "";
+    position: absolute;
+    background: url("bg.png") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.35;
+  }
+  #client-section:hover{
+      color: black;
+      background: url('bg.png') no-repeat center center/cover;
+      background-color: powderblue;
+   
+  }
+  
+  #client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .client-item {
+    padding: 14px;
+  }
+  #client img {
+    height: 30px;  margin-top: 5px;
+  }
+  #contact {
+    position: relative;
+  }
+  
+  #contact::before {
+      content: "";
+      position: absolute;
+      background: url("contact.jpg") no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.85;
+  }
+  #contact:hover{
+      color: black;
+      background: url('con1.jpg') no-repeat center center/cover;
+      background-color: powderblue;
+  
+  
+   
+  }
+  #contact-box{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      padding-bottom: 25px ;
+  }
+  #contact-box input,
+  #contact-box textarea{
+      width: 100%;
+      padding: 0.3rem;
+      border-radius: 9px;
+  font-size: 1rem;
+  }
+  #contact-box form{
+      width: 40%;
+  }
+  #contact-box label{
+      font-size: 1.3rem;
+      font-family: "merriweather";
+  }
+  footer{
+      background: black;
+      color: white;
+      padding: 5px 5px;
+      font-size: 1rem;
+      
+  }
+  #center{
+      background: black;
+      color: white;
+      padding: 9px 25px;
+  }
+  .h-primary {
+    font-size: 3.8em;
+    padding: 0px;
+    font-family: "merriweather";
+  }
+  .h-primary center{
+      font-size: 3.8em;
+      padding: 212px;
+      font-family: "merriweather";
+    }
+  .h-secondary {
+    font-size: 2.8em;
+    padding: 12px;
+    font-family: "merriweather";
+  }
+  .btn {
+    flex-direction: column;
+    padding: 6px 10px;
+    border: 2px solid white;
+    background-color: burlywood;
+    color: white;
+    margin: 17px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .btn:hover {
+      color: black;
+      background-color: lightcyan;
+    }
+    .btn1 {
+        flex-direction: column;
+      padding: 6px 10px;
+      border: 2px solid white;
+      background-color: lightcoral;
+      color: white;
+      margin: 17px;
+      font-size: 1.3em;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .btn1:hover {
+        color: black;
+        background-color: aquamarine;
+      }
+      .btn2 {
+        flex-direction: column;
+          padding: 6px 10px;
+          border: 2px solid white;
+          background-color: goldenrod;
+          color: white;
+          margin: 17px;
+          font-size: 1.3em;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        .btn2:hover {
+            color: black;
+            background-color: powderblue;
+          }
+  .center {
+    text-align: center;
+    font-size: 1em;
+  }
+  .ips{
+    background-color: black;
+    color: wheat;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  }
